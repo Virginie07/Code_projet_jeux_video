@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    background: url(./images/Fond\ decran.jpg) no-repeat center / cover;
+    width: auto;
+    height: 100vh;
+    font-family: 'Inconsolata', monospace;
+    color: white;
+}
+
+.titreprincipal{
+    text-align: center;
+    font-size: 80px;  
+}
+
+.titremenu{
+    background: black;
+    font-size: 35px;
+}
+
+/* Premier menu déroulant "Celles qui créent" */
+
+
+.menuderoulant{
+    position:relative;
+    display: inline-block;    
+}
+
+.menuderoulant .sousmenu1{
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.menuderoulant .sousmenu1 .lien1{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menuderoulant:hover .sousmenu1{
+    display: block;
+}
+
+
+
+/* Deuxième menu déroulant "Celles qui jouent" */
+
+.menuderoulant2{
+    position:relative;
+    display: inline-block;   
+}
+
+.menuderoulant2 .sousmenu2{
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.menuderoulant2 .sousmenu2 .lien2{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menuderoulant2:hover .sousmenu2{
+    display: block;
+}
+
+
+
+/* Mise en page des 2 menus déroulants */
+.menu{
+    display: flex;
+    justify-content:space-around;
+    padding-top: 100px;
+
+}
